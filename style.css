@@ -5,7 +5,7 @@
 
 /* Typography */
 body{
-    font-family: 'Playfair';
+    font-family: 'Playfair',sans-serif;
     margin: 0;
 }
 
@@ -172,15 +172,28 @@ aside{
     margin: 1em;
     order:1;
     border: 3px solid white;
-    width: 35%;
+    width: 20%;
+    max-height: 40%;
+}
+
+.col-aside-p{
+    margin: 1em;
+    order:3;
 }
 
 
 /* ************** Aside styles ************ */
+
+.aside-main-title{
+    color:#9c4e62;
+    font-family: 'Playfair';
+}
+
+
      /* **********STYLE-1 ************/
 .col-aside-style-1{
-    background-color: #f6f4ef;
-    color:#674325 ;
+    background-color: #9c4e62;
+    color:#ffff ;
 }
 
 .col-aside-style-2{
@@ -188,22 +201,32 @@ aside{
     color:#ffff ;
 }
 
+.col-aside-style-3{
+    background-color: #84946e;
+    color:#ffff ;
+}
+
+.col-aside-style-4{
+    background-color: orange;
+    color:#ffff ;
+}
+
+
 .col-aside-style-1 a{
-    color:#674325 ;
+    color:#ffff ;
 }
 
 .col-aside-style-2 a{
     color:#ffff ;
 }
 
-.col-aside-style-1:hover{
-    background-color: #c49762;
+.col-aside-style-3 a{
+    color:#ffff ;
+}
+.col-aside-style-4 a{
+    color:#ffff ;
 }
 
-.col-aside-style-2:hover{
-    color:#b39ee5 ;
-    background-color: #753ea8;
-}
 
 /***** FOOTER *****/
 
@@ -214,6 +237,9 @@ aside{
 
 @media (min-width:720px){
 
+    main{
+        background-image: linear-gradient(#c7afb5,#dce2d7,#dce2d7,#e1e4dd,#ffff);
+    }
 
     .col-header{
         flex-direction: row;
@@ -231,7 +257,6 @@ aside{
         flex-direction: row;
     }
     aside{
-        border-left: 2px solid #9c4e62;
         flex-direction: column;
         align-items: center;
         padding: 0.5em;
